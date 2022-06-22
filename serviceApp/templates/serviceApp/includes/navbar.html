@@ -1,0 +1,33 @@
+{%load static%}
+<header>
+        <nav>
+          <img id="ham-menu" src="{% static 'img/menu.png' %}">
+            <a href="#home" id="logo" style="text-decoration: none;font-family:'Berkshire Swash',cursive;">
+                <img src="{% static 'img/logo.jpg' %}">
+                Seven professions</a>
+            <ul id="nav-bar">
+              <li>
+                <a href="#" class="nav-font underline" style="text-decoration: none;" id="#homet">Home</a>
+              </li>
+              <li>
+                <a href="#about" class="nav-font underline" style="text-decoration: none;">About</a>
+              </li>
+              <li>
+                <a href="#contact" class="nav-font underline" style="text-decoration: none;" >Contact</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a  href="#servicess" class="dropdown-toggle nav-font" style="text-decoration: none;" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    servicess
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item nav-font" href="#servicess">servicess</a></li>
+                </ul>
+              </li>
+             
+              <li>
+                <a style="font-weight bold;font-size:20px;position:relative;top:-0.1px" class="btn btn-outline-primary" href="#download" id="Download">Download</a>
+              </li>
+          </ul>
+
+          </nav>
+    </header>

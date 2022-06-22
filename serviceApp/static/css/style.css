@@ -1,0 +1,394 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@900&family=Noto+Serif:wght@700&display=swap');
+*{
+  outline: none;
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Cairo', sans-serif;
+  font-family: 'Noto Serif', serif;
+}
+
+hr{
+  color: #0062ff;
+}
+/* ============= Header ============= */
+header{
+  position: fixed;
+  width: 100%;
+  padding: 0.8rem 5rem;
+  z-index: 1000000;
+}
+
+.nav-font{
+  font-size: 18px;
+}
+.nav-font:hover{
+  color: #0062ff;
+}
+
+
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav ul{
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+.dropdown-menu{
+  margin: 10px;
+  position: relative;
+  background: #fff;
+  position: relative;
+  height: auto;
+}
+
+.dropdown-item{
+  margin-bottom: 10px;
+  transition: .5s ease-in-out;
+  -webkit-transition: .5s ease-in-out;
+  -moz-transition: .5s ease-in-out;
+  -ms-transition: .5s ease-in-out;
+  -o-transition: .5s ease-in-out;
+}
+
+.dropdown-item:hover{
+  background: #0062ff;
+  color: #fff !important
+}
+nav a{
+  font-size: 1.3em;
+  position: relative;
+  top: 10px ;
+}
+nav a#logo{
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  font-size: 30px;
+  position: relative;
+  top: -1px;
+}
+nav ul a{
+  color: rgb(0, 0, 0);
+  padding: 0 5px;
+}
+
+.underline:after{
+  content: " ";
+  position: absolute;
+  background: #0062ff;
+  height: 3px;
+  width: 0%;
+  left: 0;
+  bottom: -10px;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+
+.underline:hover:after{
+  width: 100%;
+}
+
+.underline:hover{
+ color: #0062ff;
+}
+
+nav a#Download{
+color: #fff;
+background: #0062ff;
+border-color: #0062ff;
+}
+
+.sticky{
+  background-color: #fff;
+  box-shadow: 0 2rem 1.5rem rgba(0, 0, 0,0.1);
+  border-bottom: 1px solid #ccc;
+}
+.sticky nav ul a,
+.sticky nav a#logo{
+  color: rgb(0, 0, 0);
+}
+.sticky nav ul a:hover{
+  color: #0062ff;
+}
+.sticky{
+  background: rgb(255, 255, 240);
+  color: #0062ff;
+}
+#ham-menu{
+  display: none;
+  width:40px
+}
+.sticky nav a#Download{
+  color: #fff;
+background: #0062ff;
+border-color: #0062ff;
+
+}
+/* ============= End Header ============= */
+
+/*  ======= Hero Section ======= */
+.imgslide{
+  width: 100%;
+  height: 659px;
+}
+.shadow{
+  background:#fff;
+  width: 100%;
+  height:659px;
+  position: absolute;
+  top:-1px;
+  opacity: 0.2;
+}
+
+/*  ======= End Hero Section ======= */
+
+/*  ======= About Us Section =======  */
+.btn.btn.seeMore{
+  color: #fff;
+  font-size: 20px;
+}
+.aboutworld{
+  font-weight: 700;
+  font-size: 35px;
+}
+.aboutworld1{
+  font-size: 18px;
+}
+.img-responsive{
+  position: relative;
+  top:-70px;
+  width: 550px;
+}
+/*  ======= End About Us =======  */
+
+
+/*  ======= servicess Section =======  */
+.servicessh1 {
+  position: relative;
+  top: 10px;
+}
+.servicessh1 h1{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.servicess{
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: auto;
+}
+
+.conatainer{
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.conatainer .serviceBox{
+  position: relative;
+  width: 350px;
+  height: 400px;
+  background: #fff;
+  overflow: hidden;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border: 0.5px solid #ccc;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  transition: 0.2s ease-in;
+  -webkit-transition: 0.2s ease-in;
+  -moz-transition: 0.2s ease-in;
+  -ms-transition: 0.2s ease-in;
+  -o-transition: 0.2s ease-in;
+  background: linear-gradient(0deg,#0062ff 10px, transparent 10px );
+  background-repeat: no-repeat;
+  background-position: 0 0.69em;
+}
+.conatainer .serviceBox:hover{
+  background-position: 0;
+}
+.conatainer .serviceBox .icon{
+  position: absolute;
+  width: 100%;
+  height: 48%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.conatainer .serviceBox .content{
+  position: relative;
+  padding: 20px;
+  text-align: center;
+  margin-top: 150px;
+}
+.conatainer .serviceBox .content h2{
+  margin-top: 10px;
+}
+.btn.btn.seeMore1{
+  color: #fff;
+  font-size: 15px;
+  position: relative;
+  top:-10px;
+  transition: .3s ;
+  -webkit-transition: .3s ;
+  -moz-transition: .3s ;
+  -ms-transition: .3s ;
+  -o-transition: .3s ;
+}
+.btn.btn.seeMore1:hover{
+  font-size: 17px;
+}
+.img2{
+  width: 50px
+}
+/* .side{
+  position: relative;
+  margin-left: -0.6em;
+  width: 50%;
+  padding: 0.6em 0;
+  background: #0062ff;
+  color: #fff;
+  border-radius: 5px 35px 35px 5px ;
+  -webkit-border-radius: 5px 35px 35px 5px ;
+  -moz-border-radius: 5px 35px 35px 5px ;
+  -ms-border-radius: 5px 35px 35px 5px ;
+  -o-border-radius: 5px 35px 35px 5px ;
+  z-index: 100;
+  letter-spacing: 0.15em;
+} */
+/*  ======= End servicess Section =======  */
+
+/*  ======= Download Section =======  */
+.img-responsive1{
+  width: 600px;
+}
+.downloadWorld1{
+  margin-top: 150px;
+
+}
+.downloadWorld{
+  font-size: 40px;
+  font-weight: 700;
+     word-spacing: normal;
+}
+.downloadWorld2{
+  font-size: 35px;
+  font-weight: 700;
+}
+.line{
+  color: #0062ff;
+  width: 50%;
+}
+.img1{
+  width: 80px;
+}
+.appstore{
+  display: flex;
+  justify-content: space-evenly;
+}
+.appstore1{
+  width: 150px;
+  height: 100px;
+  position: relative;
+  right: 100px;
+}
+.appstore2{
+  width: 150px;
+  height: 100px;
+  position: relative;
+  right: 90px;
+}
+.googleplay{
+  margin-top: 30px;
+  width: 200px;
+}
+.googleplay1{
+  margin-top: 30px;
+  width: 200px;
+  height: 65px;
+}
+.conteent{
+  font-size:20px
+}
+.google-play{
+  display: none;
+}
+/* <======= End Download Section =======  */
+
+/* -- ======= Footer =======  */
+
+.footer{
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: auto;
+}
+
+.flex-container{
+  display: flex;
+  justify-content: center;
+}
+
+.conatainer1{
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.conatainer1 .footerBox{
+  position: relative;
+  width: 350px;
+  height: auto;
+  overflow: hidden;
+}
+
+.footerp{
+  font-family: 'Merienda', cursive;
+  color:#fff;
+  font-size:25px;
+  font-weight: 700;
+}
+.content{
+  color: #fff;
+  font-size: 15px;
+}
+
+/* -- ======= End Footer =======  */
+
+
+/* ======= Scroll To Top Button =======  */
+
+#scroll-top{
+  position: fixed;
+  display: none;
+  place-items: center;
+  height: 4.5rem;
+  width: 4.5rem;
+  right: 3rem;
+  bottom: 3rem;
+  background: transparent;
+  border: none;
+  outline: none;
+}
+/* ======= End Scroll To Top Button =======  */

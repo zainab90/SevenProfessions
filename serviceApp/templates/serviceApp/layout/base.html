@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en" >
+{% load static %}
+
+{% include 'serviceApp/includes/header.html'%}
+
+  <body >
+
+{% include 'serviceApp/includes/navbar.html' %}
+      <div id="home">
+           {% block slider_content %}
+
+            {%endblock slider_content%}
+
+      </div>
+
+
+<section class="section about-2 padding-0" style="margin-top:50px;margin-bottom:30px" id="about">
+ {% include 'serviceApp/includes/aboutus.html' %}
+</section>
+
+
+<div class="servicessh1" id="servicess">
+  {% block content %}
+  {%endblock content%}
+    {% block service_content%}
+    {%endblock service_content%}
+</div>
+
+
+<section class="section about-2 padding-0 downloadWorld1"  id="download">
+{% include 'serviceApp/includes/download.html' %}
+</section>
+
+{% include 'serviceApp/includes/footer.html' %}
+
+<button id="scroll-top">
+  <img style="width:70px" src="{% static 'img/up-arrow.png' %}">
+</button>
+
+
+{% include 'serviceApp/includes/scripts.html' %}
+{% block extra_script %}
+  {%endblock extra_script%}
+  </body>
+</html>
